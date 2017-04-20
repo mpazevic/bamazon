@@ -1,0 +1,26 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "SQL app for pseudo-managing a storefront",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpazevic/bamazon.git"
+  },
+  "author": "Max Pazevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpazevic/bamazon/issues"
+  },
+  "homepage": "https://github.com/mpazevic/bamazon#readme",
+  "dependencies": {
+    "console.table": "^0.8.0",
+    "format-currency": "^1.0.0",
+    "inquirer": "^3.0.6",
+    "mysql": "^2.13.0",
+    "prompt": "^1.0.0"
+  }
+}
