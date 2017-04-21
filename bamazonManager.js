@@ -19,7 +19,7 @@ const managerQuestion = () => {
 		type: 'list',
 		name: 'managerQuestion',
 		message: "What would you like to do, Mr. Manager?",
-		choices: ["View products for sale", "View low inventory", "Add to inventory", "Add new product"],
+		choices: ["View products for sale", "View low inventory", "Add to inventory", "Add new product", "Exit"],
 		default: 0
 	}]).then((answers) => {
 		//Various questions to perform different managerial tasks
@@ -35,6 +35,9 @@ const managerQuestion = () => {
 		} else if (answers.managerQuestion === "Add new product") {
 			console.log("");
 			addNewProduct();
+		} else if (answers.managerQuestion === "Exit") {
+			console.log("\nSee ya!\n");
+			connection.end();
 		};
 	});
 };
