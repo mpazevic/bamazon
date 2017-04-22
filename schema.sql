@@ -12,7 +12,7 @@ CREATE TABLE products (
 );
 
 SELECT * FROM products;
-DROP TABLE products;
+SELECT FORMAT(price, 2) FROM products;
 
 INSERT INTO products(product_name, department_name, price, stock_quantity)
 VALUES("Plumbus", "Random", 50.00, 10);
